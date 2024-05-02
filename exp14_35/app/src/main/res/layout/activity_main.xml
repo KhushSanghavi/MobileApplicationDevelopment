@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7CAED6"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="124dp"
+        app:layout_editor_absoluteY="256dp">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="63dp"
+            android:layout_y="487dp"
+            android:onClick="display"
+            android:text="Change Image"
+            android:textSize="26dp" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="345dp"
+            android:layout_height="117dp"
+            android:layout_x="29dp"
+            android:layout_y="70dp"
+            app:srcCompat="@drawable/whatsapp" />
+    </AbsoluteLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
